@@ -392,19 +392,19 @@
 			animeOpts = effectSettings.animeOpts
 
 		if( effectSettings.perspective != undefined ) {
-			[].slice.call(this.items).forEach(function(item) { 
+			[].slice.call(this.items).forEach(function(item) {
 				item.parentNode.style.WebkitPerspective = item.parentNode.style.perspective = effectSettings.perspective + 'px';
 			});
 		}
-		
+
 		if( effectSettings.origin != undefined ) {
-			[].slice.call(this.items).forEach(function(item) { 
+			[].slice.call(this.items).forEach(function(item) {
 				item.style.WebkitTransformOrigin = item.style.transformOrigin = effectSettings.origin;
 			});
 		}
 
 		if( effectSettings.lineDrawing != undefined ) {
-			[].slice.call(this.items).forEach(function(item) { 
+			[].slice.call(this.items).forEach(function(item) {
 				// Create SVG.
 				var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'),
 					path = document.createElementNS('http://www.w3.org/2000/svg', 'path'),
@@ -428,7 +428,7 @@
 		}
 
 		if( effectSettings.revealer != undefined ) {
-			[].slice.call(this.items).forEach(function(item) { 
+			[].slice.call(this.items).forEach(function(item) {
 				var revealer = document.createElement('div');
 				revealer.className = 'grid__reveal';
 				if( effectSettings.revealerOrigin != undefined ) {

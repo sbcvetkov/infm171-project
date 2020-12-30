@@ -5,7 +5,7 @@ img = new Image();
 
 if (brushRadius < 50) { brushRadius = 50 }
 
-img.onload = function(){  
+img.onload = function(){
 	bridgeCanvas.drawImage(img, 0, 0, bridge.width, bridge.height);
 }
 img.loc = 'assets/images/animation_5/';
@@ -29,7 +29,7 @@ function getBrushPos(xRef, yRef) {
 	  y: Math.floor((yRef-bridgeRect.top)/(bridgeRect.bottom-bridgeRect.top)*bridge.height)
     };
 }
-      
+
 function drawDot(mouseX,mouseY){
 	bridgeCanvas.beginPath();
     bridgeCanvas.arc(mouseX, mouseY, brushRadius, 0, 2*Math.PI, true);

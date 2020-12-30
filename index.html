@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>INFM171 Project</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Fixing 404 for favicon -->
+    <link rel="icon" href="data:,">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <link rel="stylesheet" href="assets/css/slider.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/picture-slider.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/grid.css" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'><link rel="stylesheet" href="assets/css/planet-gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/staggering.css">
+    <link rel="stylesheet" href="assets/css/scratch.css">
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Stilian Cvetkov <br/> F74712</h4>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">Slider Animation</a></li>
+                <li><a href="#section2">Slide Show</a></li>
+                <li><a href="#section3">Grid Animation</a></li>
+                <li><a href="#section4">Click Animation</a></li>
+                <li><a href="#section5">Mouse Touch Animation</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <section class="section about-me" data-section="section1">
+        <div class="section-heading">
+            <h2>Slider Animation</h2>
+            <div class="line-dec"></div>
+            <span>Click on a picture and move it to left or to right</span>
+        </div>
+        <div id="canvas"></div>
+        <div id="planes">
+            <div class="plane-wrapper">
+                <div class="plane">
+                    <img src="assets/images/animation_1/1.jpg" data-sampler="planeTexture"alt="Photo by Simon Zhu on Unsplash" crossorigin />
+                </div>
+            </div>
+
+            <div class="plane-wrapper">
+                <div class="plane">
+                    <img src="assets/images/animation_1/2.jpg" data-sampler="planeTexture" alt="Photo by Pedro Lastra on Unsplash" crossorigin />
+                </div>
+            </div>
+
+            <div class="plane-wrapper">
+                <div class="plane">
+                    <img src="assets/images/animation_1/3.jpg" data-sampler="planeTexture" alt="Photo by Denys Nevozhai on Unsplash" crossorigin />
+                </div>
+            </div>
+
+            <div class="plane-wrapper">
+                <div class="plane">
+                    <img src="assets/images/animation_1/4.jpg" data-sampler="planeTexture" alt="Photo by Pedro Lastra on Unsplash" crossorigin />
+                </div>
+            </div>
+
+            <div class="plane-wrapper">
+                <div class="plane">
+                    <img src="assets/images/animation_1/5.jpg" data-sampler="planeTexture" alt="Photo by Louie Martinez on Unsplash" crossorigin />
+                </div>
+            </div>
+
+            <div class="plane-wrapper">
+                <div class="plane">
+                    <img src="assets/images/animation_1/6.jpg" data-sampler="planeTexture" alt="Photo by Sonali Sharma on Unsplash" crossorigin />
+                </div>
+            </div>
+
+            <div class="plane-wrapper">
+                <span class="plane-title">Toronto</span>
+                <div class="plane">
+                    <img src="assets/images/animation_1/7.jpg" data-sampler="planeTexture" alt="Photo by Syed Ahmed on Unsplash" crossorigin />
+                </div>
+            </div>
+
+        </div>
+      </section>
+
+      <section class="section my-services" data-section="section2" style="z-index: 2;">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Slide Show</h2>
+            <div class="line-dec"></div>
+            <span>Click Next/Previous button</span
+            >
+          </div>
+          <div class="row">
+            <div class="slideshow">
+                <div class="slides">
+                    <div class="slide slide--current">
+                        <div class="slide__img" style="background-image: url(assets/images/animation_2/1.jpg)"></div>
+                        <h2 class="slide__title"></h2>
+                        <p class="slide__desc"></p>
+                        <div class="slide__link"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img" style="background-image: url(assets/images/animation_2/2.jpg)"></div>
+                        <h2 class="slide__title"></h2>
+                        <p class="slide__desc"></p>
+                        <div class="slide__link"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img" style="background-image: url(assets/images/animation_2/3.jpg)"></div>
+                        <h2 class="slide__title"></h2>
+                        <p class="slide__desc"></p>
+                        <div class="slide__link"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img" style="background-image: url(assets/images/animation_2/4.jpg)"></div>
+                        <h2 class="slide__title"></h2>
+                        <p class="slide__desc"></p>
+                        <div class="slide__link"></div>
+                    </div>
+                </div>
+                <nav class="slidenav">
+                    <button class="slidenav__item slidenav__item--prev">Previous</button>
+                    <span>/</span>
+                    <button class="slidenav__item slidenav__item--next">Next</button>
+                </nav>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="section3" style="z-index: 2;">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Grid Animation</h2>
+            <div class="line-dec"></div>
+            <span>Click right sidebar buttons</span>
+          </div>
+          <div class="row">
+            <div class="content content--side content--right">
+              <div class="control control--effects">
+                <span class="control__title">run effect</span>
+                <button class="control__btn" data-fx="Hapi">Hapi</button>
+                <button class="control__btn" data-fx="Amun">Amun</button>
+                <button class="control__btn" data-fx="Isis">Isis</button>
+                <button class="control__btn" data-fx="Montu">Montu</button>
+                <button class="control__btn" data-fx="Satet">Satet</button>
+                <button class="control__btn" data-fx="Ra">Ra</button>
+                <button class="control__btn" data-fx="Sobek">Sobek</button>
+                <button class="control__btn" data-fx="Ptah">Ptah</button>
+                <button class="control__btn" data-fx="Bes">Bes</button>
+              </div>
+            </div>
+            <div class="content content--center">
+              <div class="grid grid--type-a">
+                <div class="grid__sizer"></div>
+                <div class="grid__item">
+                  <div class="grid__link"><img class="grid__img" src="assets/images/animation_3/1.jpg" alt="Some image" /></div>
+                </div>
+                <div class="grid__item">
+                  <div class="grid__link"><img class="grid__img" src="assets/images/animation_3/2.jpg" alt="Some image" /></div>
+                </div>
+                <div class="grid__item">
+                  <div class="grid__link pater">
+                    <div class="pater__img"></div>
+                    <div class="pater__content"></div>
+                  </div>
+                </div>
+                <div class="grid__item">
+                  <div class="grid__link"><img class="grid__img" src="assets/images/animation_3/3.jpg" alt="Some image" /></div>
+                </div>
+                <div class="grid__item">
+                  <div class="grid__link"><img class="grid__img" src="assets/images/animation_3/4.jpg" alt="Some image" /></div>
+                </div>
+                <div class="grid__item">
+                  <div class="grid__link"><img class="grid__img" src="assets/images/animation_3/5.jpg" alt="Some image" /></div>
+                </div>
+                <div class="grid__item">
+                  <div class="grid__link"><img class="grid__img" src="assets/images/animation_3/6.jpg" alt="Some image" /></div>
+                </div>
+                <div class="grid__item">
+                  <div class="grid__link"><img class="grid__img" src="assets/images/animation_3/7.jpg" alt="Some image" /></div>
+                </div>
+                <div class="grid__item">
+                  <div class="grid__link"><img class="grid__img" src="assets/images/animation_3/8.jpg" alt="Some image" /></div>
+                </div>
+                <div class="grid__item">
+                  <div class="grid__link"><img class="grid__img" src="assets/images/animation_3/9.jpg" alt="Some image" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="section4" style="z-index: 2;">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Click Animation</h2>
+            <div class="line-dec"></div>
+            <span>Click photo</span>
+          </div>
+          <div class="row">
+            <!-- partial:index.partial.html -->
+            <h1 class="staggering-h1">Please wait until the images are loaded.</h1>
+            <div class="staggering-div">
+              <span><img src="assets/images/animation_4/1.jpg"/></span>
+              <span><img src="assets/images/animation_4/2.jpg"/></span>
+              <span><img src="assets/images/animation_4/3.jpg"/></span>
+              <span><img src="assets/images/animation_4/4.jpg"/></span>
+              <span><img src="assets/images/animation_4/5.jpg"/></span>
+              <span><img src="assets/images/animation_4/6.jpg"/></span>
+              <span><img src="assets/images/animation_4/7.jpg"/></span>
+              <span><img src="assets/images/animation_4/8.jpg"/></span>
+              <span><img src="assets/images/animation_4/9.jpg"/></span>
+              <span><img src="assets/images/animation_4/10.jpg"/></span>
+              <span><img src="assets/images/animation_4/11.jpg"/></span>
+              <span><img src="assets/images/animation_4/12.jpg"/></span>
+              <span><img src="assets/images/animation_4/13.jpg"/></span>
+              <span><img src="assets/images/animation_4/14.jpg"/></span>
+              <span><img src="assets/images/animation_4/15.jpg"/></span>
+              <span><img src="assets/images/animation_4/16.jpg"/></span>
+              <span><img src="assets/images/animation_4/17.jpg"/></span>
+              <span><img src="assets/images/animation_4/18.jpg"/></span>
+              <span><img src="assets/images/animation_4/19.jpg"/></span>
+              <span><img src="assets/images/animation_4/20.jpg"/></span>
+              <span><img src="assets/images/animation_4/21.jpg"/></span>
+              <span><img src="assets/images/animation_4/22.jpg"/></span>
+              <span><img src="assets/images/animation_4/23.jpg"/></span>
+              <span><img src="assets/images/animation_4/24.jpg"/></span>
+              <span><img src="assets/images/animation_4/25.jpg"/></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="section5" style="z-index: 5;">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Mouse Touch Animation</h2>
+            <div class="line-dec"></div>
+            <span>Click on the picture and start moving the cursor</span>
+          </div>
+          <div class="row">
+            <figure id="bridgeContainer" style="margin: 0 auto;">
+            <canvas id="bridge" width="750" height="465"></canvas>
+              <figcaption>Erasing the current picture will reveal a new one...</figcaption>
+            </figure>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script id="slider-planes-vs" type="x-shader/x-vertex">
+        #ifdef GL_ES
+        precision mediump float;
+        #endif
+
+        // default mandatory attributes
+        attribute vec3 aVertexPosition;
+        attribute vec2 aTextureCoord;
+
+        // those projection and model view matrices are generated by the library
+        // it will position and size our plane based on its HTML element CSS values
+        uniform mat4 uMVMatrix;
+        uniform mat4 uPMatrix;
+
+        // this is generated by the library based on the sampler name we provided
+        // it will be used to map adjust our texture coords so the texture will fit the plane
+        uniform mat4 planeTextureMatrix;
+
+        // texture coord varying that will be passed to our fragment shader
+        varying vec2 vTextureCoord;
+
+        void main() {
+            // apply our vertex position based on the projection and model view matrices
+            gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+
+            // varying
+            // use texture matrix and original texture coords to generate accurate texture coords
+            vTextureCoord = (planeTextureMatrix * vec4(aTextureCoord, 0.0, 1.0)).xy;
+        }
+    </script>
+    <script id="slider-planes-fs" type="x-shader/x-fragment">
+        #ifdef GL_ES
+        precision mediump float;
+        #endif
+
+        // our texture coords varying
+        varying vec2 vTextureCoord;
+
+        // our texture sampler (see how its name matches the data-sampler attribute on our image tags)
+        uniform sampler2D planeTexture;
+        // our opacity uniform that goes from 0 to 1
+        uniform float uOpacity;
+
+        void main( void ) {
+            // map our texture to the varying texture coords
+            vec4 finalColor = texture2D(planeTexture, vTextureCoord);
+
+            // the distance from this point to the top edge is a float from 0 to 1
+            float distanceToTop = distance(vec2(vTextureCoord.x, 1.0), vTextureCoord);
+
+            // calculate an effect that goes from 0 to 1 depenging on uOpacity and distanceToTop
+            float spreadFromTop = clamp((uOpacity * (1.0 - distanceToTop) - 1.0) + uOpacity * 2.0, 0.0, 1.0);
+
+            // handle pre-multiplied alpha on rgb values and use spreadFromTop as alpha.
+            finalColor = vec4(vec3(finalColor.rgb * spreadFromTop), spreadFromTop);
+
+            // this is it
+            gl_FragColor = finalColor;
+        }
+    </script>
+    <script id="distortion-vs" type="x-shader/x-vertex">
+        #ifdef GL_ES
+        precision mediump float;
+        #endif
+
+        // default mandatory attributes
+        attribute vec3 aVertexPosition;
+        attribute vec2 aTextureCoord;
+
+        // our displacement texture matrix uniform
+        uniform mat4 displacementTextureMatrix;
+
+        // mouse position and direction uniforms
+        uniform vec2 uMousePos;
+        uniform float uDirection;
+
+        // custom varyings
+        varying vec2 vTextureCoord;
+        varying vec2 vDispTextureCoord;
+        varying vec2 vMouseTexCoords;
+
+        void main() {
+            gl_Position = vec4(aVertexPosition, 1.0);
+
+            // varyings
+            vTextureCoord = aTextureCoord;
+            vDispTextureCoord = (displacementTextureMatrix * vec4(aTextureCoord, 0.0, 1.0)).xy;
+
+            // we will handle our mouse coords here for better performance
+            // get our texture coords for both directions
+            vec2 mouseHorizontalTexCoords = (uMousePos + 1.0) / 2.0;
+            mouseHorizontalTexCoords.y = 0.5;
+
+            vec2 mouseVerticalTexCoords = (uMousePos + 1.0) / 2.0;
+            mouseVerticalTexCoords.x = 0.5;
+
+            // use the right value for the right direction
+            vMouseTexCoords = mix(mouseHorizontalTexCoords, mouseVerticalTexCoords, uDirection);
+        }
+    </script>
+    <script id="distortion-fs" type="x-shader/x-fragment">
+        #ifdef GL_ES
+        precision mediump float;
+        #endif
+
+        // varyings
+        varying vec2 vTextureCoord;
+        varying vec2 vDispTextureCoord;
+        varying vec2 vMouseTexCoords;
+
+        // our render texture is basically what's being drawn in our canvas
+        uniform sampler2D uRenderTexture;
+        // the displacement texture we've loaded into our shader pass
+        uniform sampler2D displacementTexture;
+
+        // all our uniforms
+        uniform float uDragEffect;
+        uniform vec2 uMousePos;
+        uniform vec2 uOffset;
+        uniform float uDirection;
+        uniform vec3 uBgColor;
+
+        void main( void ) {
+            vec2 textureCoords = vTextureCoord;
+
+            // repeat and offset our displacement map texture coords for both slider directions
+            vec2 horizontalPhase = fract(vec2(vDispTextureCoord.x + uOffset.x, vDispTextureCoord.y + (uOffset.y / 3600.0)) / vec2(1.0, 1.0));
+            vec2 verticalPhase = fract(vec2(vDispTextureCoord.x * (uOffset.x / 3600.0), vDispTextureCoord.y + uOffset.y) / vec2(1.0, 1.0));
+
+            // use the correct repeated and offseted texture coords
+            vec2 phase = mix(horizontalPhase, verticalPhase, uDirection);
+            vec4 displacement = texture2D(displacementTexture, phase);
+
+            // use our varying mouse texture coords
+            vec2 mouseTexCoords = vMouseTexCoords;
+
+            float distanceToMouse = distance(mouseTexCoords, textureCoords);
+
+            // calculate an effect that goes from 0 to 1 depenging on uDragEffect and distanceToMouse
+            float spreadFromMouse = clamp((uDragEffect * (1.0 - distanceToMouse) - 1.0) + uDragEffect * 2.0, 0.0, 1.0);
+
+            // calculate our fish eye like distortions
+            vec2 fishEye = (vec2(textureCoords - mouseTexCoords).xy) * pow(distanceToMouse, 3.0);
+
+            // add a displacement based on our map and our time uniform
+            float displacementEffect = displacement.r * 1.25;
+
+            // spread our fish eye and displacement effects from our mouse
+            // calculate for both directions
+            vec2 horizontalTexCoords = textureCoords;
+            horizontalTexCoords.x -= spreadFromMouse * fishEye.x * displacementEffect / 2.0;
+            horizontalTexCoords.y += spreadFromMouse * fishEye.y * displacementEffect * 3.0;
+
+            vec2 verticalTexCoords = textureCoords;
+            verticalTexCoords.x += spreadFromMouse * fishEye.x * displacementEffect * 3.0;
+            verticalTexCoords.y -= spreadFromMouse * fishEye.y * displacementEffect / 2.0;
+
+            // use the right value for the right direction
+            textureCoords = mix(horizontalTexCoords, verticalTexCoords, uDirection);
+
+
+            // get our final colored and BW vec4
+            vec4 finalColor = texture2D(uRenderTexture, textureCoords);
+            float grey = dot(finalColor.rgb, vec3(0.299, 0.587, 0.114));
+            vec4 finalGrey = vec4(vec3(grey), 1.0);
+
+            // mix our both vec4 based on our spread value
+            finalColor = mix(finalColor, finalGrey, spreadFromMouse * finalColor.a);
+
+            float spreadFromMouseAdjusted = spreadFromMouse / sqrt(2.0);
+
+            // apply a grey background where we don't have nothing to draw
+            finalColor = mix(vec4(uBgColor.r * spreadFromMouseAdjusted / 255.0, uBgColor.g * spreadFromMouseAdjusted / 255.0, uBgColor.b * spreadFromMouseAdjusted / 255.0, spreadFromMouseAdjusted), finalColor, finalColor.a);
+
+            gl_FragColor = finalColor;
+        }
+    </script>
+    <script id="slider-planes-vs" type="x-shader/x-vertex">
+        #ifdef GL_ES
+        precision mediump float;
+        #endif
+
+        // default mandatory attributes
+        attribute vec3 aVertexPosition;
+        attribute vec2 aTextureCoord;
+
+        // those projection and model view matrices are generated by the library
+        // it will position and size our plane based on its HTML element CSS values
+        uniform mat4 uMVMatrix;
+        uniform mat4 uPMatrix;
+
+        // this is generated by the library based on the sampler name we provided
+        // it will be used to map adjust our texture coords so the texture will fit the plane
+        uniform mat4 planeTextureMatrix;
+
+        // texture coord varying that will be passed to our fragment shader
+        varying vec2 vTextureCoord;
+
+        void main() {
+            // apply our vertex position based on the projection and model view matrices
+            gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+
+            // varying
+            // use texture matrix and original texture coords to generate accurate texture coords
+            vTextureCoord = (planeTextureMatrix * vec4(aTextureCoord, 0.0, 1.0)).xy;
+        }
+    </script>
+    <script id="slider-planes-fs" type="x-shader/x-fragment">
+        #ifdef GL_ES
+        precision mediump float;
+        #endif
+
+        // our texture coords varying
+        varying vec2 vTextureCoord;
+
+        // our texture sampler (see how its name matches the data-sampler attribute on our image tags)
+        uniform sampler2D planeTexture;
+        // our opacity uniform that goes from 0 to 1
+        uniform float uOpacity;
+
+        void main( void ) {
+            // map our texture to the varying texture coords
+            vec4 finalColor = texture2D(planeTexture, vTextureCoord);
+
+            // the distance from this point to the top edge is a float from 0 to 1
+            float distanceToTop = distance(vec2(vTextureCoord.x, 1.0), vTextureCoord);
+
+            // calculate an effect that goes from 0 to 1 depenging on uOpacity and distanceToTop
+            float spreadFromTop = clamp((uOpacity * (1.0 - distanceToTop) - 1.0) + uOpacity * 2.0, 0.0, 1.0);
+
+            // handle pre-multiplied alpha on rgb values and use spreadFromTop as alpha.
+            finalColor = vec4(vec3(finalColor.rgb * spreadFromTop), spreadFromTop);
+
+            // this is it
+            gl_FragColor = finalColor;
+        }
+    </script>
+    <script id="distortion-vs" type="x-shader/x-vertex">
+        #ifdef GL_ES
+        precision mediump float;
+        #endif
+
+        // default mandatory attributes
+        attribute vec3 aVertexPosition;
+        attribute vec2 aTextureCoord;
+
+        // our displacement texture matrix uniform
+        uniform mat4 displacementTextureMatrix;
+
+        // mouse position and direction uniforms
+        uniform vec2 uMousePos;
+        uniform float uDirection;
+
+        // custom varyings
+        varying vec2 vTextureCoord;
+        varying vec2 vDispTextureCoord;
+        varying vec2 vMouseTexCoords;
+
+        void main() {
+            gl_Position = vec4(aVertexPosition, 1.0);
+
+                // varyings
+                vTextureCoord = aTextureCoord;
+                vDispTextureCoord = (displacementTextureMatrix * vec4(aTextureCoord, 0.0, 1.0)).xy;
+
+                // we will handle our mouse coords here for better performance
+                // get our texture coords for both directions
+                vec2 mouseHorizontalTexCoords = (uMousePos + 1.0) / 2.0;
+                mouseHorizontalTexCoords.y = 0.5;
+
+                vec2 mouseVerticalTexCoords = (uMousePos + 1.0) / 2.0;
+                mouseVerticalTexCoords.x = 0.5;
+
+                // use the right value for the right direction
+                vMouseTexCoords = mix(mouseHorizontalTexCoords, mouseVerticalTexCoords, uDirection);
+            }
+    </script>
+    <script id="distortion-fs" type="x-shader/x-fragment">
+        #ifdef GL_ES
+        precision mediump float;
+        #endif
+
+        // varyings
+        varying vec2 vTextureCoord;
+        varying vec2 vDispTextureCoord;
+        varying vec2 vMouseTexCoords;
+
+        // our render texture is basically what's being drawn in our canvas
+        uniform sampler2D uRenderTexture;
+        // the displacement texture we've loaded into our shader pass
+        uniform sampler2D displacementTexture;
+
+        // all our uniforms
+        uniform float uDragEffect;
+        uniform vec2 uMousePos;
+        uniform vec2 uOffset;
+        uniform float uDirection;
+        uniform vec3 uBgColor;
+
+        void main( void ) {
+            vec2 textureCoords = vTextureCoord;
+
+            // repeat and offset our displacement map texture coords for both slider directions
+            vec2 horizontalPhase = fract(vec2(vDispTextureCoord.x + uOffset.x, vDispTextureCoord.y + (uOffset.y / 3600.0)) / vec2(1.0, 1.0));
+            vec2 verticalPhase = fract(vec2(vDispTextureCoord.x * (uOffset.x / 3600.0), vDispTextureCoord.y + uOffset.y) / vec2(1.0, 1.0));
+
+            // use the correct repeated and offseted texture coords
+            vec2 phase = mix(horizontalPhase, verticalPhase, uDirection);
+            vec4 displacement = texture2D(displacementTexture, phase);
+
+            // use our varying mouse texture coords
+            vec2 mouseTexCoords = vMouseTexCoords;
+
+            float distanceToMouse = distance(mouseTexCoords, textureCoords);
+
+            // calculate an effect that goes from 0 to 1 depenging on uDragEffect and distanceToMouse
+            float spreadFromMouse = clamp((uDragEffect * (1.0 - distanceToMouse) - 1.0) + uDragEffect * 2.0, 0.0, 1.0);
+
+            // calculate our fish eye like distortions
+            vec2 fishEye = (vec2(textureCoords - mouseTexCoords).xy) * pow(distanceToMouse, 3.0);
+
+            // add a displacement based on our map and our time uniform
+            float displacementEffect = displacement.r * 1.25;
+
+            // spread our fish eye and displacement effects from our mouse
+            // calculate for both directions
+            vec2 horizontalTexCoords = textureCoords;
+            horizontalTexCoords.x -= spreadFromMouse * fishEye.x * displacementEffect / 2.0;
+            horizontalTexCoords.y += spreadFromMouse * fishEye.y * displacementEffect * 3.0;
+
+            vec2 verticalTexCoords = textureCoords;
+            verticalTexCoords.x += spreadFromMouse * fishEye.x * displacementEffect * 3.0;
+            verticalTexCoords.y -= spreadFromMouse * fishEye.y * displacementEffect / 2.0;
+
+            // use the right value for the right direction
+            textureCoords = mix(horizontalTexCoords, verticalTexCoords, uDirection);
+
+
+            // get our final colored and BW vec4
+            vec4 finalColor = texture2D(uRenderTexture, textureCoords);
+            float grey = dot(finalColor.rgb, vec3(0.299, 0.587, 0.114));
+            vec4 finalGrey = vec4(vec3(grey), 1.0);
+
+            // mix our both vec4 based on our spread value
+            finalColor = mix(finalColor, finalGrey, spreadFromMouse * finalColor.a);
+
+            float spreadFromMouseAdjusted = spreadFromMouse / sqrt(2.0);
+
+            // apply a grey background where we don't have nothing to draw
+            finalColor = mix(vec4(uBgColor.r * spreadFromMouseAdjusted / 255.0, uBgColor.g * spreadFromMouseAdjusted / 255.0, uBgColor.b * spreadFromMouseAdjusted / 255.0, spreadFromMouseAdjusted), finalColor, finalColor.a);
+
+            gl_FragColor = finalColor;
+        }
+    </script>
+
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+    <script src='https://www.curtainsjs.com/build/curtains.min.js'></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/picture-slider.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/anime.min.js"></script>
+    <script src="assets/js/picture-slider-3.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/grid.js"></script>
+    <script src='https://codepen.io/juliangarnier/pen/75efae7724dbc3c055e918057fc4aca5.js'></script>
+    <script src="assets/js/staggering.js"></script>
+    <script src="assets/js/planet-gallery.js"></script>
+    <script  src="assets/js/scratch.js"></script>
+  </body>
+</html>
